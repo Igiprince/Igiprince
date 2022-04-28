@@ -1,14 +1,58 @@
+@keyframes borderAnimation{
+    from { border: 6px double orangered;}
+    to { border: 6px solid palevioletred;}
+}
+@keyframes opaciting{
+    from { opacity: 1;}
+    to { opacity: 0.5;}
+}
+.selltext{
+    font-size: 20px;
+    font-weight: bold;
+}
+.buytext{
+    font-size: 20px;
+    font-weight: bold;
+}
 .left-vocations{
     width: 40vw;
-    height: 70vh;
+    height: auto;
     border: 1px solid black;
 }
+.upper-left-identifier{
+    width: inherit;
+    height: auto;
+    text-align: center;
+}
+.each-one{
+    width: inherit;
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-shadow: none;
+    font-size: 25px;
+    font-weight: bold;
+    border-top: 1px solid pink;
+    border-radius: 25%;
+}
+.each-one:hover{
+    color: palevioletred;
+    font-size: 30px;
+    border-bottom: 1px solid pink;
+    border-radius: 25%;
+}
+
 .right-vocations{
     width: 60vw;
-    height: 70vh;
-    border: 1px solid black;
+    height: auto;
     display: flex;
     flex-direction: column;
+}
+.upper-right-identifier{
+    width: inherit;
+    height: auto;
+    background: orangered;
+    color: white;
+    text-align: center;
 }
 .seller-details{
     width: inherit;
@@ -17,16 +61,111 @@
     flex-direction: row;
 }
 .self-profile{
-    width: 25vw;
+    width: 40vw;
     height: auto;
-    border: 1px solid black;
+    box-shadow: 0px 0px 5px 0px orangered;
+}
+.qualification{
+    display: flex;
+    flex-direction: row;
+}
+h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: palevioletred;
+}
+h4::before{
+    content: "-";
+    font-size: 25px;
+    color: orangered;
+}
+h3{
+    text-decoration: underline 1px solid orangered;
+    box-shadow: 1px 2px 1px 2px orangered;
+    margin-left: 50px;
+}
+.self-contact{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: auto;
+    text-shadow: 1px 1px 5px white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.upper-self-contact{
+    width: inherit;
+    height: auto;
+    background: orangered;
+    color: white;
 }
 .seller-pic{
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
     background: url(man1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    border: 1px double orangered;
+    border: 6px double orangered;
+    animation: borderAnimation 500ms infinite;
+    margin-left: 40px;
+    box-shadow: 2px 2px 20px 2px black;
+}
+.facebook{
+    width: 50px;
+    height: 50px;
+    animation: opaciting 5s infinite;
+}
+.twitter{
+    width: 50px;
+    height: 50px;
+    animation: opaciting 5s infinite;
+}
+.whatsapp{
+    width: 50px;
+    height: 50px;
+    animation: opaciting 5s infinite;
+}
+.call{
+    width: 50px;
+    height: 50px;
+    animation: opaciting 5s infinite;
+}
+.local{
+    width: 50px;
+    height: 50px;
+    animation: opaciting 5s infinite;
+}
+p{
+    font-weight: bold;
+}
+.image-holder{
+    width: inherit;
+   text-align: center;
+    border-bottom: 1px solid palevioletred;
+    border-radius: 30%;
+}
+.image-holder:hover{
+    border-bottom: 6px solid palevioletred;
+    border-radius: 30%;
+}
+.chat-room-shower{
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.choosen-way{
+    width: 25vw;
+    height: auto;
+    background: linear-gradient(black,gray);
+}
+.choosen-way{
+    width: 25vw;
+    height: auto;
+    background: linear-gradient(gray,whitesmoke);
+}
+.local-chat{
+    width: 50vw;
+    height: 100px;
+    background: linear-gradient(black,gray);
 }
