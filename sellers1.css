@@ -1,0 +1,32 @@
+.left-vocations{
+    width: 40vw;
+    height: 70vh;
+    border: 1px solid black;
+}
+.right-vocations{
+    width: 60vw;
+    height: 70vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.seller-details{
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.self-profile{
+    width: 25vw;
+    height: auto;
+    border: 1px solid black;
+}
+.seller-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url(man1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 1px double orangered;
+}

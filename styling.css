@@ -26,6 +26,11 @@ body{
 	margin-left: 35%;
 	margin-top: 13%;
 }
+.arrow:hover{
+	opacity: 0.5;
+	width: 105px;
+	height: 105px;
+}
 h3{
 	font-style: blod;
 	font-size: 30px;
@@ -81,4 +86,41 @@ input{
 .faceb{
 	width: 50px;
 	height: 50px;
+}
+.register-button{
+	width: auto;
+	height: auto;
+	background: green;
+	color: white;
+	font-weight: bold;
+	margin-left: 50px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	box-shadow: 1px 2px 2px black;
+}
+.reset-button{
+	width: auto;
+	height: auto;
+	background: rgb(255, 74, 3);
+	color: white;
+	font-weight: bold;
+	margin-left: 50px;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	box-shadow: 1px 2px 2px black;
+}
+.reset-button:active{
+	background: red;
+}
+.register-button:active{
+	background: rgb(125, 177, 46);
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+.clicktext{
+	color: orange;
+}
+.clicktext:hover{
+	color: orangered;
+	transition-duration: 100ms;
 }
