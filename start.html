@@ -7,27 +7,59 @@
 	<link rel="stylesheet" type="text/css" href="starttyle.css">
 </head>
 <body>
-	<nav class="navigations">
-		<img src="logoun.png" alt="myLogo" class="mylogo">
-		<h2>Home</h2>
-		<h2>Posted</h2>
-		<h2>Products</h2>
-		<h2>Catalogs</h2>
-		<h2>Services</h2>
-	</nav>
-	<div class="lower-navigation">
-		<img src="rights.png" alt="myLogo" class="rightpos">
-		<div class="guiderText">
-				<h3>SELL products..</h1>
-				<h3>BUY products..</h1>
+	<div class="logo-handle">
+		<a href="start.html"><img src="logoun.png" alt="my logo image" class="start-logo"></a>
+		<h1 style="align-self: center;">.</h1>
+		<h1 class="buy-and-sell"><a href="start.html" class="b-s">Buy & Sell</a></h1>
+		<img src="detailer.png" alt="detail icon" id="det-icon" onmouseover="show()"; onmouseup="document.getElementById('text-details').style.display='none';">
+	</div>
+	<div id="text-details">
+		<h3 id="e-detail1" onmouseover="Pshow()" onmouseleave="phide()">privacy policy</h3>
+		<div id="privacy-space"></div>
+		<h3 id="e-detail2" onmouseover="ashow()" onmouseleave="ahide()">Acount</h3>
+		<div id="acount-space"></div>
+		<h3 id="e-detail3" onmouseover="gshow()" onmouseleave="ghide()">Guide line</h3>
+		<div id="guide-space"></div>
+		<h3 id="e-detail4" onmouseover="dshow()" onmouseleave="dhide()">designer</h3>
+		<div id="designer-space"></div>
+	</div>
+	<div class="descriptions-handler">
+		<p class="site-right-descriptions">Welcome to Buy and Sell online website</p>
+		<p class="site-left-descriptions">this website is here to give you whatever you need <br>dont wolly,
+			 <br>if you are using this website as E-commerce you are comfortable because we have supporters to guide you <br>
+			if you are able to continue our online ecommerce you can click on button bellow to start operation</p>
+			<img src="sIcon.png" alt="shopping icon" class="shop-icon">
+			<a href="buy.html"><button class="next">LINK TO WEBSITE</button></a>
 		</div>
-		<img src="logoun.png" alt="my doubled logo size" class="myl">
-		<img src="lefts.png" alt="myLogo" class="leftpos">
+	<div id="welcome">
+		<h1 id="greeting">Good morning world</h1>
+		<h3 id="time-tag">none here</h3>
 	</div>
-	<div class="welcome">
-		<h1 class="good">HELLO TO NEW WORLD.</h1>
-		<h3 class="watch">06:30:12.9543 AM</h3>
-	</div>
+	<div class="separator"></div>
+	<div class="advert">
+		<div class="product-holder">
+			<a href="computer.html"><img src="laptop.jpg" alt="laptop producy image" class="p-image"></a>
+			<div class="p-descriptions">
+				<p>Laptop computer. <br> this product have unique operations <br>
+					and it have manufactured by Apple which have released high operating system called
+					<u>macOS</u> this computer laptop have high speed as processor speed and it have <u>32GB of RAM</u>
+					if you like to see more about this product you can click on it to continue
+				</p>
+				<div class="loader">
+					<div class="each1"></div>
+					<div class="each2"></div>
+					<div class="each3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="product-qualifications">
+			<p class="p-q"><u><a href="apple.html" class="apple-link">macO laptop</a></u></p>
+			<p class="p-q"><font color="red">1600,000FrW / 1600$</font></p>
+			<p class="p-q"><u><a href="apple.html" class="apple-link">Apple Product</a></u></p>
+		</div>
 
+	</div>
+	<!--this is javascript code space-->
+	<script src="ontime.js"></script>
 </body>
 </html>
