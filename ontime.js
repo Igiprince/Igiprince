@@ -55,7 +55,7 @@ function timing(){
     var welcomer = document.getElementById("welcome");
     var greet = document.getElementById("greeting");
     var t = document.getElementById("time-get");
-    if(hour >= 12 && hour < 18 && mins >=0){
+    if(hour >= 13 && hour < 18 && mins >=0){
         welcomer.style.setProperty("background","url(aftern.jpg)");
         welcomer.style.backgroundSize = 'cover';
         welcomer.style.backgroundPosition = 'center';
@@ -91,6 +91,8 @@ function timing(){
         welcomer.style.boxShadow = '1px 1px 5px 1px pink';
         greet.textContent = 'HAVE GOOD LUNCH!';
         t.style.color = 'black';
-    }	
+    }else{
+        welcomer.color = 'black';
+    };
 };
 setInterval(timing,1000);

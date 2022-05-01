@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuySell</title>
+    <link rel="stylesheet" href="starttyle.css">
+    <link rel="stylesheet" href="buySell.css">
+</head>
+<body>
+    <nav class="navigations">
+		<a href="start.html" class="linktext"><img src="logoun.png" alt="myLogo" class="mylogo"></a>
+		<h2><a href="buy.html" class="linktext">Home</a></h2>
+        <h2><a href="products.html" class="linktext">products</a></h2>
+		<h2><a href="Posted.html" class="linktext">Posted</a></h2>
+		<h2><a href="categories.html" class="linktext">Catalogs</a></h2>
+		<h2><a href="Services.html" class="linktext">Services</a></h2>
+	</nav>
+    <div class="lower-navigation">
+		<img src="rights.png" alt="myLogo" class="rightpos">
+		<div class="guiderText">
+				<h3>SELL products..</h1>
+				<h3>BUY products..</h1>
+		</div>
+		<img src="logoun.png" alt="my doubled logo size" class="myl">
+		<img src="lefts.png" alt="myLogo" class="leftpos">
+	</div>
+    <!--below is for each product to have-->
+    <div class="each-one-in-products">
+        <div class="prods">
+            <div class="right-prods">
+                <div class="pro-im"></div>
+                <span class="pro-dets"><p>macOS</p><p class="pro-prices"><u>1600,000FrW /1600$</u></p><p class="more-images" ondblclick="descriptions()" onclick="descH()" onmousemove="warner()" onmouseleave="hiderer()">Images</p><div id="warn"><p>double click to see more images</p></div></span>
+                <div id="pro-im-stock"><div class="inner-pro-im-stock">
+                    <img src="back.jpg" alt="back side of laptop" class="side">
+                    <img src="left.jpg" alt="left side of laptop" class="side">
+                    <img src="front.jpg" alt="front side of laptop" class="side">
+                    <img src="screen.jpg" alt="screen part of laptop" class="side">
+                </div></div>
+            </div>
+            <div class="left-prods">
+                <div class="pro-descripts">
+                    <p>Laptop computer. <br> this product have unique operations <br>
+						and it have manufactured by Apple which have released high operating system called
+						<u>macOS</u> this computer laptop have high speed as processor speed and it have <u>32GB of RAM</u>
+						if you like to see more about this product you can click on it to continue
+                </div>
+                <a href="sellers.html" class="pro-hoster"><div class="pro-hoster-space">
+                    <div class="hoster-image"></div>
+                    <p class="hoster-name">Eric Michael</p>
+                </div></a>
+            </div>
+        </div>
+        <button class="buy-comf">Buy Now!</button>
+    </div>
+        <!--javasccript on images -->
+        <script src="onproducts.js"></script>
+</body>
+</html>

@@ -121,7 +121,7 @@ input{
     height: auto;
 }
 /*product details division edition*/
-.p-details{
+#p-details{
     width: 50vw;
     height: auto;
     text-align: center;
@@ -129,6 +129,7 @@ input{
     flex-direction: column;
     margin-left: 12%;
     border-bottom: 1px double pink;
+    display: none;
 }
 .each-detail{
     margin-top: 0px;
@@ -172,7 +173,7 @@ h5{
     height: auto;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow-wrap: break-word;
 }
 .product-space{
     width: inherit;
@@ -224,9 +225,9 @@ a{
     background: url(man1.jpg);
     background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 50%;
-    text-align: left;
-   animation: animating 2s infinite;
+    animation: animating 2s infinite;
 }
 .customer-handle{
     width: inherit;
@@ -248,5 +249,5 @@ a{
     background-position: center;
     border-radius: 50%;
     text-align: left;
-   animation: animating 2s infinite;
+    animation: animating 2s infinite;
 }
