@@ -1,2 +1,2 @@
 # WebBlogs
-those are my blogs I have started with
+Soon will be new uploaded webpages
