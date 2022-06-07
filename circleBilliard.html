@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="playerStyle.css">
+</head>
+<body>
+    <div id="w-l">
+        <h1 id="win-los"></h1>
+    </div>
+    <!--player desk holder-->
+    <div id="player-holder">
+        <div id="gues-point"><div id="needl"></div></div>
+        <!--wholes collection desk-->
+        <div id="wholes">
+            <div id="up" class="wh-div">
+                <div id="f-whole" class="whole"></div>
+            </div>
+            <div id="up-lower-down" class="wh-div">
+                <div id="s-whole" class="whole"></div>
+                <div id="th-whole" class="whole"></div>
+            </div>
+            <div id="center" class="wh-div">
+                <div id="fo-whole" class="whole"></div>
+                <!--needle cricle-->
+                <div id="needle-circle" class="center-circle">
+                    <div id="needle-tree" class="needle">
+                        <div id="ball"></div>
+                        <div id="itself"></div>
+                    </div>    
+                </div>
+                <!--end-->
+                <div id="fi-whole" class="whole"></div>
+            </div>
+            <div id="up-bottom" class="wh-div">
+                <div id="six-whole" class="whole"></div>
+                <div id="se-whole" class="whole"></div>
+            </div>
+            <div id="bottom" class="wh-div">
+                <div id="ei-whole" class="whole"></div>
+            </div>
+        </div>
+    </div>
+    <!--INPUT form tunning-->
+    <br>
+    <br>
+    <br>
+    <br>
+    <label for="tunnel">
+        <input type="range" id="tunnel" min="0" max="360" step="1" oninput="getRangeValue()">
+    </label>
+    <br>
+    <button id="shoot" onmousedown="waiting()" onmouseup="shootBall()">SHOOT</button>
+    <button id="start" onclick="start()">Refresh</button>
+    <!--DIVISION OF CHOOSING PRICES
+     AND OTHER OPTIONS FOR PLAYING THE GAME-->
+    
+    <div class="log-form">
+        <div class="top"></div>
+        <div class="left"></div>
+        <div class="bottom"></div>
+        <div class="right"></div>
+        <div class="front" id="front">
+            <h1>Login <br> Sing-in</h1>
+            <button class="open-door" onclick="openDoor()">Open</button>
+            <br>
+            <button class="close-door" onclick="closing()">Close</button>
+        </div>
+        <!--form handled inside the cube-->
+        <div class="form-handler" id="form">
+            <form>
+                <fieldset>
+                    <legend><h1>Player-Form</h1></legend>
+                    <label for="">PlayerName:
+                        <br>
+                        <input type="text" name="PlayerName" id="playername" placeholder="PLayer name please!" required>
+                    </label>
+                    <br>
+                    <label for="password">Security Key:
+                        <br> 
+                        <input type="password" name="playerpassword" placeholder="Your Passowrd!" id="password" required>
+                    </label>
+                    <br>
+                    <label for="price">Can you choose your price for start?<br>
+                        <select name="prices" id="price" required>
+                            <option value="100">100frw</option>
+                            <option value="200">200frw</option>
+                            <option value="300">300frw</option>
+                            <option value="400">400frw</option>
+                            <option value="500">500frw</option>
+                            <option value="600">600frw</option>
+                            <option value="700">700frw</option>
+                            <option value="800">800frw</option>
+                            <option value="900">900frw</option>
+                            <option value="1000">1000frw</option>
+                        </select>
+                    </label>
+                    <br>
+                    <input type="submit" name="submit" value="Send-Now">
+                </fieldset>
+            </form>
+        </div>
+        <div class="back"></div>
+    </div>
+
+    <!--Script functions-->
+</body>
+<script src="onDoor.js"></script>
+</html>

@@ -1,0 +1,393 @@
+body{
+    margin: 0;
+    display: inline-flex;
+    flex-direction: row;
+    background: gray;
+}
+
+/*player parts holder*/
+#player-holder{
+    width: 500px;
+    height: 500px;
+    background: rgba(103, 100, 100, 0.955);
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+/*Gues point edition*/
+#gues-point{
+    width: 100px;
+    height: 45px;
+    background: repeating-radial-gradient(
+        rgba(114, 107, 107,0.5) 20px,
+        rgba(0, 0, 0,0.5) 5px,
+        rgba(116, 110, 110,0.5)
+    );
+    border-radius: 100% 100% 0 0;
+    align-self: center;
+}
+#needl{
+    display: inline-flex;
+    width: 5px;
+    height: 30px;
+    background: rgba(255, 0, 0, 0.567);
+    align-self: center;
+    margin-top: 15px;
+}
+
+/*wholes container edition*/
+#wholes{
+    width: 450px;
+    height: 450px;
+    background: rgba(113, 173, 210, 0.3);
+    border: 2px solid rgba(53, 80, 89, 0.645);
+    align-self: center;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px 1px rgb(17, 31, 36), -2px 2px 3px 1px rgb(4, 13, 16);
+    align-items: center;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#wholes::after{
+    content: "";
+    width: calc(450px - 20px);
+    height: calc(450px - 20px);
+    position: absolute;
+    background: inherit;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/*on division containing each whole in the circle*/
+.wh-div{
+    width: 400px;
+    height: auto;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#center{
+    width: inherit;
+}
+#up-lower-down{
+    margin-top: -28px;
+}
+#up-bottom{
+    margin-bottom: -28px;
+}
+/*Edition carried out on each c=kind of color*/
+.whole{
+    width: 60px;
+    height: 60px;
+    background: repeating-radial-gradient(
+        black 30px,
+        gray 5px,
+        black
+    );
+    border-radius: 100%;
+   /* border-top: 5px groove black;*/
+}
+
+/*each whole name and edition*/
+#f-whole,#ei-whole{
+    margin: auto;
+}
+
+/*on center needle circle containing needle tree*/
+.center-circle{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    background: rgb(53, 80, 89);
+    box-shadow: 2px 2px 3px 3px black;
+}
+.needle{
+    width: 10px;
+    height: 450px;
+    background: none;
+    align-self: center;
+    margin-top: -195px;
+    margin-left: 25px;
+    /*transform: rotate(57deg);*/
+}
+#itself{
+    width: inherit;
+    height: 220px;
+    background: sienna;
+    position: absolute;
+    border-radius: 25% 25% 0 0;
+    margin-top: -20px;
+}
+#ball{
+    width: 40px;
+    height: 40px;
+    background: repeating-linear-gradient(
+        90deg,
+        red 1px,
+        green 20px,
+        pink
+    );
+    position: absolute;
+    margin-top: 205px;
+    margin-left: -15px;
+    border-radius: 50%;
+    z-index: 6;
+}
+/*OUR CSS PLAYER END HERE FOR EDITION*/
+
+
+
+
+/*OTHER ADDS*/
+
+/*3D design*/
+.log-form{
+    margin-left: 100px;
+}
+.top,.left,.bottom,.right,.front,.back,.form-handler{
+    width: 400px;
+    height: 500px;
+    background: rgba(108, 163, 181, 0.3);
+    border: 1px solid lightblue;
+    position: absolute;
+}
+.top,.bottom{
+    margin-top: 0px;
+    transform: skewX(45deg);
+    height: 100px;
+    margin-left: -50px;
+    z-index: 3;
+    background: rgba(76, 155, 195, 0.839);
+}
+.bottom{
+    z-index: 0;
+    margin-top: 500px;
+    background: rgb(115, 117, 118);
+}
+.front{
+    margin-top: 100px;
+    z-index: 3;
+    background: repeating-linear-gradient(
+        90deg,
+        lightblue 20px,
+        rgba(60, 127, 146, 0.692) 70px,
+        lightblue
+    );
+    text-align: center;
+    color: rgb(85, 145, 163);
+    text-shadow: 2px 2px rgba(78, 125, 141, 0.737);
+}
+.back{
+    margin-left: -100px;
+    z-index: 0;
+    background:rgba(60, 127, 146, 0.692) 70px
+}
+.left{
+    transform: skewY(45deg);
+    width: 100px;
+    margin-top: 50px;
+    margin-left: -100px;
+    z-index: 3;
+    background: repeating-linear-gradient(
+        45deg,
+        lightblue 20px,
+        rgba(60, 127, 146, 0.692) 70px,
+        lightblue
+    );
+}
+.right{
+    transform: skewY(45deg);
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 300px;
+    z-index: 0;
+    background: rgb(115, 117, 118);
+}
+
+/*form located inside the cube*/
+.form-handler{
+    background: rgb(85, 145, 163);
+    z-index: 2;
+    margin-top: 50px;
+    margin-left: -50px;
+    color: rgb(98, 98, 98);
+    font-size: 25px;
+    text-align: center;
+}
+input{
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    font-family: Helvetica, sans-serif;
+    background: inherit;
+    color: rgb(2, 18, 14);
+}
+input[type="submit"]{
+    width: 300px;
+    height: 40px;
+    background: rgba(76, 202, 76,0.5);
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgba(13, 8, 2, 0.757);
+}
+
+/*styling buttons to be clicked in certain functions*/
+.open-door,.close-door{
+    border-radius: 45%;
+    background: rgb(85, 145, 163);
+    box-shadow: 2px 2px 10px 2px rgba(78, 125, 141, 0.737);
+    color: rgb(1, 15, 63);
+    margin-bottom: 20px;
+}
+select,option{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+#tunnel{
+    width: 500px;
+    height: 30px;
+    box-shadow: 2px 2px 2px 2px black;
+    transform: rotate(-90deg);
+    margin-left: -225px;
+    margin-top: 200px;
+}
+/*style for shooting actions*/
+@keyframes shootingEffect{
+    0%{
+        margin-top: 200px;
+    }
+    50%{
+        margin-top: 210px;
+    }
+    100%{
+        margin-top: 200px;
+    }
+}
+@keyframes shadowEffect{
+    0%{
+        margin-top: 90px;
+        width: 100px;
+        margin-left: -50px;
+    }
+    50%{
+        margin-top: 100px;
+        width: 200px;
+        margin-left: 50;
+    }
+    100%{
+        margin-top: 90px;
+        width: 100px;
+        margin-left: -50px;
+    }
+}
+#shoot{
+    width: 200px;
+    height: 100px;
+    background: goldenrod;
+    color: rgb(28, 50, 53);
+    margin-top: 400px;
+    margin-left: -220px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    box-shadow: 2px 20px 20px 0px rgb(88, 66, 21);
+    animation: shootingEffect 2s infinite;
+    border: 10px groove rgb(138, 86, 9);
+}
+#shoot::before{
+    content: "";
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    background: none;
+    box-shadow: 2px 20px 15px 0px black;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: -50px;
+    animation: shadowEffect 2s infinite;
+}
+
+/*winner-looser choise*/
+@keyframes texting{
+    0%{
+        text-shadow: 1px 1px 0px red;
+        color: rgb(98, 5, 5);
+    }
+    50%{
+        text-shadow: 2px 2px 20px red;
+        color: rgb(32, 24, 10);
+    }
+    100%{
+        text-shadow: 1px 1px 0px red;
+        color: rgb(119, 6, 6);
+    }
+}
+@keyframes winning{
+    0%{
+        text-shadow: 1px 1px 0px rgb(4, 118, 31);
+        color: rgb(0, 193, 45);
+    }
+    50%{
+        text-shadow: 2px 2px 20px rgb(4, 118, 31);
+        color: rgb(0, 193, 45);
+    }
+    100%{
+        text-shadow: 1px 1px 0px rgb(4, 118, 31);
+        color: rgb(0, 193, 45);
+    }
+}
+#w-l{
+    width: 0px;
+    height: 0px;
+    background: rgba(15, 221, 22, 0.593);
+    position: absolute;
+    text-align: center;
+    color: rgb(200, 39, 21);
+    border-top: 5px solid rgba(207, 118, 2, 0.789);
+    border-bottom: 5px solid rgba(198, 113, 3, 0.894);
+    border-radius: 20%;
+    padding-bottom: 30px;
+    z-index: 7;
+    margin-top: 220px;
+    margin-left: 60px;
+    animation: texting 2s infinite;
+    overflow: hidden;
+}
+#start{
+    width: 200px;
+    height: 100px;
+    background: rgb(176, 103, 8);
+    color: rgb(6, 225, 253);
+    margin-top: 450px;
+    margin-left: -220px;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    box-shadow: 2px 20px 20px 0px rgb(88, 66, 21);
+    animation: shootingEffect 2s infinite;
+    border: 10px groove rgb(106, 66, 6);
+    display: none;
+}
+#start::before{
+    content: "";
+    width: 200px;
+    height: 5px;
+    position: absolute;
+    background: none;
+    box-shadow: 2px 20px 15px 0px black;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-left: -50px;
+    animation: shadowEffect 2s infinite;
+}
+
+
+
